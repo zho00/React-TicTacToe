@@ -13,3 +13,58 @@ body {
     color-scheme: dark;
   }
 }
+
+.board {
+  display: inline-grid;
+  grid-template-columns: repeat(3, 80px);
+  gap: 8px;
+}
+
+.square {
+  width: 80px;
+  height: 80px;
+  font-size: 2rem;
+  color: #0f172a;
+  background: #fff;
+  border: 2px solid #0f172a;
+  border-radius: 12px;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.board-layout {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+}
+
+.board-title {
+  font-size: clamp(3rem, 6vw, 5rem);
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  margin: 0;
+}
+
+.status-text {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin: 0;
+}
+
+.restart-button {
+  margin-top: 16px;
+  padding: 12px 24px;
+  font-size: 1rem;
+  border: 2px solid #0f172a;
+  border-radius: 999px;
+  background: #ffe066;
+  cursor: pointer;
+  transition: background 120ms ease;
+}
+
+.restart-button:hover {
+  background: #ffd54f;
+}
