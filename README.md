@@ -15,4 +15,4 @@ A web-based Tic-Tac-Toe game built with React to demonstrate component-based des
 ## How to Run
 1. Clone the repository
 2. Run `npm install`
-3. Run `npm start` to launch locally
+3. Run `npm run dev` to launch locally
